@@ -11,7 +11,7 @@ void setup() {
   Serial.begin(115200);
   pinMode(ir_pin, INPUT_PULLUP);
 
-  WiFi.begin("mobile-wifi", "ghta1284");
+  WiFi.begin("mobile-wifi", "password");
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
